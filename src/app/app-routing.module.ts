@@ -7,7 +7,7 @@ import {AlbumDetailsComponent} from "./album-details/album-details.component";
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'albums', component: AlbumsComponent },
-  { path: 'albums/:id', component: AlbumDetailsComponent }
+  { path: 'albums/:id', component: AlbumDetailsComponent, data: { message: 'This album is heavy' } }
 ];
 
 @NgModule({
